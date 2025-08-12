@@ -1,0 +1,72 @@
+/* h1{
+    background-color: aquamarine;
+    color: black;
+} */
+
+/* p{
+    word-spacing: 10px;
+    letter-spacing: 10px;
+} */
+ 
+
+ /* h1{
+    text-indent: 100px;
+    background-color: black;
+    color: white;
+
+ } */
+  body{
+    background-color: darkblue;
+    color: lightgrey;
+    font-family:Arial, Helvetica, sans-serif;
+
+    
+  }
+  .box{
+    vertical-align: middle;
+    font-size:x-large;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    vertical-align: middle;
+    align-items: center;
+    align-content: center;
+    
+    background-color: brown;
+    color: azure;
+   
+    
+    width: 300px;
+    height: 200px;
+    
+
+  }
+   .box:hover{
+    padding: 10px;
+    rotate: 720deg;
+    width: 400px;
+    height: 300px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    background-color: blue;
+color: aliceblue;
+transition-duration: .7s;
+
+}
+ 
+ .box:active{
+    padding: 10px;
+    rotate: 720deg;
+    width: 400px;
+    height: 300px;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    background-color: blue;
+color: aliceblue;
+transition-duration: .7s;
+border: 5px solid beige;
+border-radius: 4px;
+
+}
