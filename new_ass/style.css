@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #004be0fa;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    perspective: 1200px;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #083f0a;
+    transform: rotateX(30deg) rotateY(30deg);
+    transition: 0.5s ease-in-out;
+}
+
+.container:hover {
+    transform: rotateX(300px) rotateY(360deg) translateZ(700px);
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.text {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
