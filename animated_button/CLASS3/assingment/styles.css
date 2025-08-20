@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f1;
+  }
+  
+  .container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .box {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  /* Box 1 - Color change from left and right */
+  .box1 {
+    background-color: #3498db;
+  }
+  
+  .box1::before, .box1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #e74c3c;
+    transition: all 0.4s ease;
+  }
+  
+  .box1::before {
+    left: -50%;
+  }
+  
+  .box1::after {
+    right: -50%;
+  }
+  
+  .box1:hover::before {
+    left: 0;
+  }
+  
+  .box1:hover::after {
+    right: 0;
+  }
+  
+  .box1:hover {
+    background-color: #2ecc71;
+  }
+  
+  /* Box 2 - Color change from top and bottom */
+  .box2 {
+    background-color: #9b59b6;
+  }
+  
+  .box2::before, .box2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #f39c12;
+    transition: all 0.4s ease;
+  }
+  
+  .box2::before {
+    top: -50%;
+  }
+  
+  .box2::after {
+    bottom: -50%;
+  }
+  
+  .box2:hover::before {
+    top: 0;
+  }
+  
+  .box2:hover::after {
+    bottom: 0;
+  }
+  
+  .box2:hover {
+    background-color: #f1c40f;
+  }
+  
+  /* Box 3 - Rotate and scale change */
+  .box3 {
+    background-color: #9b59b6;
+  }
+  
+  .box3::before, .box3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #f39c12;
+    transition: all 0.4s ease;
+  }
+  
+  .box3::before {
+    left: -50%;
+  }
+  
+  .box3::after {
+    right: -50%;
+  }
+  
+  .box3:hover::before {
+    left: 0; rotate: 180deg;
+  }
+  
+  .box3:hover::after {
+    right: 0; rotate: 180deg;
+  }
+  
+  .box3:hover {
+    background-color: #f1c40f;
+  }
+  
+  /* Box 4 - Grows from center */
+  .box4 {
+    background-color: #e74c3c;
+    transform-origin: center;
+    border-radius: 50%;
+  }
+  
+  .box4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db;
+    transition: all 0.4s ease;
+    transform: scale(0);
+  }
+  
+  .box4:hover {
+    background-color: #2ecc71;
+    transform: scale(1.2);
+  }
+  
+  .box4:hover::before{
+    transform: scale(1);
+    border-radius: 100%;
+  }
+  
