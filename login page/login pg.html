@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-pg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <div class="bg-blobs" aria-hidden="true"></div>
+        <form class="container" aria-labelledby="login-heading">
+            <div class="card">
+                <h1 id="login-heading" class="brand">Welcome</h1>
+
+                <p class="sub">Please sign up or login to continue</p>
+
+                <div class="inputs">
+                    <label class="input-group">
+                        <input id="firstName" name="firstName" type="text" required />
+                        <span class="label">First Name</span>
+                    </label>
+
+                    <label class="input-group">
+                        <input id="lastName" name="lastName" type="text" required />
+                        <span class="label">Last Name</span>
+                    </label>
+
+                    <label class="input-group">
+                        <input id="fatherName" name="fatherName" type="text" />
+                        <span class="label">Father Name</span>
+                    </label>
+
+                    <label class="input-group">
+                        <input id="phone" name="phone" type="tel" placeholder="" />
+                        <span class="label">Phone</span>
+                    </label>
+
+                    <label class="input-group">
+                        <input id="dob" name="dob" type="date" />
+                        <span class="label small">Date of Birth</span>
+                    </label>
+
+                    <label class="input-group">
+                        <input id="email" name="email" type="email" required />
+                        <span class="label">Email</span>
+                    </label>
+
+                    <label class="input-group">
+                        <input id="password" name="password" type="password" required />
+                        <span class="label">Password</span>
+                    </label>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn ghost">Sign up</button>
+                    <button type="submit" class="btn primary">Log in</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
